@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255,255,255,0);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#output {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}

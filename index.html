@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Image</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="mode-switch">
+            <label>
+                <input type="radio" name="mode" value="learn" checked onchange="changeMode('learn')"> Nauka
+            </label>
+            <label>
+                <input type="radio" name="mode" value="test" onchange="changeMode('test')"> Test
+            </label>
+        </div>
+        <div class="image-container">
+            <img src="image.png" alt="Diagram" usemap="#imagemap">
+            <div class="dot" style="left: 675px; top: 295px;" onclick="handleClick(this, 'Łoże tokarki')"></div>
+            <div class="dot" style="left: 400px; top: 120px;" onclick="handleClick(this, 'Prowadnice')"></div>
+            <div class="dot" style="left: 293px; top: 114px;" onclick="handleClick(this, 'Wrzeciennik')"></div>
+            <div class="dot" style="left: 625px; top: 120px;" onclick="handleClick(this, 'konik')"></div>
+            <div class="dot" style="left: 562px; top: 497px;" onclick="handleClick(this, 'śruba pociągowa')"></div>
+            <div class="dot" style="left: 600px; top: 497px;" onclick="handleClick(this, 'wałek pociągowy')"></div>
+            <div class="dot" style="left: 521px; top: 497px;" onclick="handleClick(this, 'zębatka')"></div>
+            <div class="dot" style="left: 211px; top: 491px;" onclick="handleClick(this, 'skrzynia posuwów')"></div>
+            <div class="dot" style="left: 546px; top: 120px;" onclick="handleClick(this, 'support wzdłużny')"></div>
+            <div class="dot" style="left: 390px; top: 495px;" onclick="handleClick(this, 'skrzynia supportowa')"></div>
+            <div class="dot" style="left: 475px; top: 497px;" onclick="handleClick(this, 'dźwignia')"></div>
+            <div class="dot" style="left: 434px; top: 497px;" onclick="handleClick(this, 'support poprzeczny')"></div>
+            <div class="dot" style="left: 478px; top: 118px;" onclick="handleClick(this, 'obrotnica')"></div>
+            <div class="dot" style="left: 518px; top: 120px;" onclick="handleClick(this, 'support narzędziowy')"></div>
+            <div class="dot" style="left: 440px; top: 119px;" onclick="handleClick(this, 'imak narzędziowy')"></div>
+            <div class="dot" style="left: 328px; top: 497px;" onclick="handleClick(this, 'wanna blaszana')"></div>
+            <div class="dot" style="left: 325px; top: 115px;" onclick="handleClick(this, 'uchwyt szczękowy')"></div>
+            <div class="dot" style="left: 368px; top: 115px;" onclick="handleClick(this, '4 szczęki')"></div>
+            <div class="dot" style="left: 585px; top: 121px;" onclick="handleClick(this, 'kieł konika')"></div>
+            <div class="dot" style="left: 272px; top: 495px;" onclick="handleClick(this, 'podstawa')"></div>
+            <div class="dot" style="left: 110px; top: 390px;" onclick="handleClick(this, 'wałek')"></div>
+            <div class="dot" style="left: 663px; top: 500px;" onclick="handleClick(this, 'pompa chłodziwa')"></div>
+            <div class="dot" style="left: 112px; top: 282px;" onclick="handleClick(this, 'przekładnia pasowa')"></div>
+            <div class="dot" style="left: 113px; top: 178px;" onclick="handleClick(this, 'przekładnia gitarowa')"></div>
+            <div class="dot" style="left: 630px; top: 498px;" onclick="handleClick(this, 'wałek sprzęgłowy')"></div>
+            <div class="dot" style="left: 565px; top: 121px;" onclick="handleClick(this, 'dźwignia')"></div>
+            <div class="dot" style="left: 280px; top: 253px;" onclick="handleClick(this, 'mostek')"></div>
+            <div class="dot" style="left: 233px; top: 110px;" onclick="handleClick(this, 'nawrotnica')"></div>
+            <!-- Add more dots as needed -->
+        </div>
+        <div id="output"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
